@@ -9,7 +9,7 @@
 
     body {
       color: #fff;
-      font-family: 'Nunito Semibold';
+      font-family: 'sans serif';
       text-align: center;
     }
     #content {
@@ -59,6 +59,7 @@
       height: 100%;
       background: transparent;
       padding: 0;
+      display: none;
     }
 
     #grid p {
@@ -66,10 +67,9 @@
       background: #000;
       margin: 0;
       opacity: 0.2;
-      display: none;
     }
 
-    input:checked + #grid + p {
+    input:checked + #content #grid{
       display: grid;
     }
 
